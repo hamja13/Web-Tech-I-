@@ -1,73 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <p style="text-align: center"><b>Registration</b></p>
-    <form method="post" action="welcome.php" enctype="">
-
-    <?php
-    $Name=$_POST['UserName'];
-    $Email=$_POST['email'];
-    echo
-    ?>
-        <fieldset><legend>General Informantion</legend>
-        <center>
-        <label for="FirstName">First Name: </label>
-        <input type="text" name="FirstName" id="FirstName" placeholder=" "><br>
-
-        <label for="LastName">Last Name: </label>
-        <input type="text" name="LastNAme" id="LastName" placeholder=" "><br>
-
-        <label for="Father's Name: ">Father's Name: </label>
-        <input type="text" name="Father'sNAme" id="Father's Name"><br>
-
-        Gender
-        <input type="radio" name="m" id="m">Male
-        <input type="radio" name="m" id="m">Female
-        <input type="radio" name="m" id="m">Others <br>
-
-        <label for="dob">Date of Birth: </label>
-        <input type="date" name="dob" id="dob"><br>
-
-        <label for="Blood Group">Blood Group: </label>
-        <select name="" id="">
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="AB">AB</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-        </center> 
-
-        </select></fieldset> <br><br>
-
-        <fieldset><legend>contact Informantion</legend>
-            <center>
-            <label for="Email: ">Email: </label>
-            <input type="text" name="Email" id="Email" placeholder=" "><br>
-    
-            <label for="Phone:">Phone: </label>
-            <input type="text" name="Phone" id="Phone" placeholder=" "><br>
-    
-            <label for="Website: ">Website: </label>
-            <input type="text" name="Website" id="Website"><br>
-
-            <label for="Present Address: ">Present Address: </label>
-            <input type="text" name="Present Address" id="Present Address"><br>
-            </center>   
-            </select> </fieldset> <br><br>
- 
-        <label for="phn">Phone Number:</label><br>
-     <input type="text" name=" " id="UserNumber" placeholder=" "><br>
-        </select><br><br>
-        <button>Submit</button>
-        <button>Reset</button>
-    </form>
-
-   
+    <table  align="center">
+      <tr>
+        <td>
+          <h1>Change Password</h1>
+          <form action="changePassword.php" novalidate method="post" >
+            <fieldset>
+              <legend>Change Password</legend>
+              <label for="currentPass">Current Password:</label>
+              <input type="password" id="currentPass" name="currentPass"><br><br>
+              <label for="newPass">New Password:</label>
+              <input type="text" id="newPass" name="newPass"><br><br>
+              <label for="confirmPass">Confirm Password:</label>
+              <input type="text" id="confirmPass" name="confirmPass"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+          <h3>Don't have an Account ? Register <a href="register.html">here</a></h3>
+          <h3><a href="forgetPassword.html">Forget Password </a> </h3>
+        </td>
+      </tr>
+    </table>
 </body>
 </html>
